@@ -10,8 +10,9 @@
     "test": "ng test --watch=false",
     "test:watch": "ng test",
     "lint": "ng lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build:prod",
+    "deploy": "gh-pages -d dist/task-tracker",
+    "build:prod": "ng build --base-href=/taskmanager-angular-kiro/"
   },
   "dependencies": {
     "@angular/animations": "^18.0.0",
